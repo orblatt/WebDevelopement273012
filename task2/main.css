@@ -2,7 +2,12 @@
     margin: auto;
     width: 20%;
 }
-#spotify-logo {
+
+#logoAndHead #spotify-logo {
     width: 70%;
     display: block;
+}
+
+#logoAndHead #spotify-description {
+    color: blue;
 }
