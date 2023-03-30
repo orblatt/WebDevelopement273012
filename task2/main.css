@@ -67,3 +67,12 @@
     font-size: 12px;
     clear:both;
   }
+
+  .pfooter {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: yellow;
+    width: 300px;
+    border: 3px red;
+  }
