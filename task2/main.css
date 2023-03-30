@@ -16,3 +16,19 @@
     font-size: 20px;
     background-color: orange;
 }
+
+/* Define the font family */
+@font-face {
+    font-family: 'david';
+    font-style: normal;
+    font-weight: 400;
+    src: local('david'), url('https://fonts.cdnfonts.com/s/2041/david.woff') format('woff');
+}
+
+.pmain {
+    text-align: left;
+    color: black;
+    font-family: david;
+    float: left;
+    width: 60%;
+}
