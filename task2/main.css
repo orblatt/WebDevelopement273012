@@ -26,9 +26,33 @@
 }
 
 .pmain {
+    position: relative;
+    width: 60%;
+    float: left;
+    display: inline;
+}
+
+.pmain p {
+    position: relative; 
     text-align: left;
     color: black;
     font-family: 'david';
+  }
+
+.pmain img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire <img> tag */
+  }
+
+  .pnews {
+    width: 40%;
     float: left;
-    width: 60%;
-}
+    background-color: pink;
+    padding: 15px;
+    position: relative;
+    display: inline;
+  }
