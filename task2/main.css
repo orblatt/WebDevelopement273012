@@ -56,3 +56,14 @@
     position: relative;
     display: inline;
   }
+
+  .myTable {
+    width: 40%;
+    /* center the table */
+    margin-left: auto;
+    margin-right: auto; 
+    color: red;
+    border: 1px green;
+    font-size: 12px;
+    clear:both;
+  }
