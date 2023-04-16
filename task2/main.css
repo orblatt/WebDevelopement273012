@@ -25,6 +25,15 @@
     src: local('david'), url('https://fonts.cdnfonts.com/s/2041/david.woff') format('woff');
 }
 
+* {
+  box-sizing: border-box; 
+  margin: 0px;
+  /* 
+  The width and height properties include the content, padding, and border, but do not include the margin. 
+  width = border + padding + width of the content, and height = border + padding + height of the content.
+  */
+}
+
 .pmain {
     position: relative;
     width: 60%;
@@ -37,6 +46,7 @@
     text-align: left;
     color: black;
     font-family: 'david';
+    font-weight: normal;
   }
 
 .pmain img {
@@ -62,10 +72,18 @@
     /* center the table */
     margin-left: auto;
     margin-right: auto; 
-    color: red;
-    border: 1px green;
-    font-size: 12px;
     clear:both;
+  }
+  
+  .myTable table, th, td {
+    color: red;
+    border: 1px solid green;
+    font-size: 12px;
+  }
+
+  .myTable img {
+    height: 50px;
+    width: 50px;
   }
 
   .pfooter {
@@ -74,5 +92,7 @@
     right: 0;
     background-color: yellow;
     width: 300px;
-    border: 3px red;
+    border: 3px solid red;
   }
+
+  
