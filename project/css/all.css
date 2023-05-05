@@ -3,7 +3,7 @@
     line-height: 4;
     text-align: center;
 
-    background-image: url("background.jpg");
+    background-image: url("../resources/background.jpg");
     background-size: auto
   }
   p{
