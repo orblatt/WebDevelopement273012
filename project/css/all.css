@@ -1,0 +1,16 @@
+
+  body{
+    line-height: 4;
+    text-align: center;
+
+    background-image: url("../resources/background.jpg");
+    background-size: auto
+  }
+  p{
+    line-height: 4;
+    text-align: center;
+  }
+   h3{
+        font-family: Georgia, sans-serif;
+        font-size: 16px;
+   }
