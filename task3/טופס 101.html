@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="he"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+        body {
+            background-color: rgb(148, 209, 226);
+        }
+
+        h4 {
+            color: red
+        }
+
+        div  {
+            border: 1px solid black;
+            padding: 4px;
+            margin: 3px;
+        }
+.fr{float: right;}
+.w25{width: 19%;}
+
+
+     
+    </style>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>טופס 101</title>
+</head>
+
+<body dir="rtl">
+    <h3>טופס 101 המכללה האקדמית </h3>
+    <h4>שדות נדרשים מסומנים ב *</h4>
+    <br><br>
+    <form action="mailto:test@example.com">
+        <div>
+
+            <label for="ytax">שנת המס</label>&gt;<input type="text" value="2023" disabled="">
+        </div>
+        
+        <div> פרטי המעסיק</div>
+
+        <div>
+        <label for="em_name">שם </label>&gt;<input type="text" value="המכללה האקדמית">
+        <label for="em_add">כתובת </label>&gt;<input type="text" value="רבנו ירוחם 2">
+        <label for="em_tel">מספר טלפון </label>&gt;<input type="tel" value="*6086">
+        <label for="em_dpnm">תיק ניכויים</label>&gt;<input type="number" value="900000000">
+       </div>
+       
+       <div> פרטי העובד</div>
+    
+       <div>
+       <label for="fi_name"> שם פרטי</label>&gt;<input type="text" required="">*
+       <label for="la_name">שם משפחה </label>&gt;<input type="text" required="">*
+    </div>   
+        
+    
+     זיהוי על פי *   
+    <fieldset>
+        <input type="radio" name="id-pas" id="id">תעודת זהות
+        <input type="radio" name="id-pas" id="passport">דרכון (עבור אזרח זר)
+        
+    </fieldset>
+    <div>
+    <label for="em_id">מספר זהות </label>&gt;<input type="text">
+    <label for="idscan"> צילום תעודת זהות</label>
+    <input type="file" id="idscan" name="idscan">
+    </div>
+    
+    <div>
+        <label for="birthdade">תאריך לידה</label><input type="date" required="">*
+        <label for="immdade">תאריך עלייה</label><input type="date">
+
+    </div>
+    <div>
+        <label>יישוב
+            <select name="city">
+                
+                    <option value="תל אביב">תל אביב</option>
+                    <option value="חיפה">חיפה</option>
+                    <option value="ירןשליים">ירושליים</option>
+                    <option value="אשדוד">אשדוד</option>
+                    <option value="נתניה">נתניה</option>
+                    <option value="רמת גן">רמת גן</option>
+                    <option value="יהוד">יהוד</option>
+                    <option value="באר שבע">באר שבע</option>
+            </select>
+        </label>
+            <label>רחוב
+                <select name="city">
+                    
+                        <option value="ז&#39;בוטינסקי ">ז'בוטינסקי </option>
+                        <option value="הרצל">הרצל</option>
+                        <option value="רבין">רבין</option>
+                        <option value="יפו">יפו</option>
+                        <option value="ביאליק">ביאליק</option>
+                        <option value=" הסתדרות">הסתדרות </option>
+                        <option value="משה דיין">משה דיין</option>
+                        <option value="בן גוריון "> בן גוריון</option>
+                </select>
+                <label for="homenu">מספר בית </label>&gt;<input type="number" required="">*
+                <label for="postcode">מיקוד  </label>&gt;<input type="number" required="">*
+
+     </label></div>
+     <div>
+        <label for="mobile">מספר טלפון נייד </label>&gt;<input type="number" required="">*
+        <label for="phone">מספר טלפון   </label>&gt;<input type="number">
+        
+     </div>
+     <div>
+        <label for="email">כתובת דואר אלקטרוני    </label>&gt;<input type="email" required="">*
+         
+     </div>  
+     <div class="w25 fr">
+        מין
+        <fieldset>
+            <input type="radio" name="sex" id="male">זכר 
+            <input type="radio" name="sex" id="female">נקבה
+            
+        </fieldset>
+        </div>
+
+        <div class="w25 fr">
+        מצב משפחתי
+        <fieldset>
+            <input type="radio" name="marst" id="bachelor">רווק\ה 
+            <input type="radio" name="marst" id="married">נשוי\אה
+            <input type="radio" name="marst" id="divorcee">גרוש\ה 
+            <input type="radio" name="marst" id="widower&#39;">אלמן\ה
+            <input type="radio" name="marst" id="separated">פרוד\ה 
+        </fieldset>
+    </div>
+        <div class="w25 fr">
+        תושב ישראל
+        <fieldset>
+            <input type="radio" name="isrci" id="yes">כן 
+            <input type="radio" name="isrci" id="no">לא
+        </fieldset>
+    </div>
+        <div class="w25 fr">
+        חבר קיבוץ 
+        <fieldset>
+            <input type="radio" name="kibbutz" id="yes">כן 
+            <input type="radio" name="kibbutz" id="no">לא
+        </fieldset>
+    </div>
+        <div class="w25 fr">
+        קופת חולים  
+        <fieldset>
+            <input type="radio" name="hmo" id="macabi">מכבי 
+            <input type="radio" name="hmo" id="klalit">כללית
+            <input type="radio" name="hmo" id="mehuhedet">מאוחדת 
+            <input type="radio" name="hmo" id="lehumit">לאומית
+        
+        </fieldset>
+    </div>
+
+     
+     
+
+
+
+        <input type="submit" value="שלח טופס">
+        <input type="reset" value="אפס ">
+
+    
+    </form>
+
+
+</body></html>
