@@ -1,0 +1,12 @@
+body {
+    color: black;
+    background-color: #89CFF0;
+}
+
+.rtl-aliigned {
+    text-align: right
+}
+
+.bolded { 
+    font-weight: bold;
+}
