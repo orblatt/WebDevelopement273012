@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" dir="rtl">
+        <link rel="stylesheet" href="form101.css">
+        <title>טופס 101</title>
+    </head>
+    <body dir="rtl">
+        <form method="post" action="form101.php">
+            <h1>טופס 101 המכללה האקדמית תל אביב יפו</h1>
+            <h4>שדות נדרשים מסומנים בכוכבית *</h4>
+            <div>
+                <p>שנת המס: <input type="year" placeholder="2023" name="taxYear"></p>
+            </div>
+            <div>
+                <p>פרטי המעסיק</p>
+            </div>
+            <div class="container">
+                <label>שם: </label>
+                <input type="text" name="employerName">
+                <label>כתובת: </label>
+                <input type="text" name="employerAddress">
+                <label>טלפון: </label>
+                <input type="tel" name="employerPhoneNumber">
+                <label>תיק ניכויים: </label>
+                <input type="number" name="deductionsPortfolioID">
+            </div>
+            <div>
+                <p>פרטי העובד</p>
+            </div>
+            <div class="container">
+                <label>שם פרטי* : </label>
+                <input type="text" name="firstName" required>
+                <label>שם משפחה* : </label>
+                <input type="text" name="lastName" required>
+            </div>
+            <div class="container">
+                <label>זיהוי על פי*: </label>
+                <input type="radio" name="identifyType" id="id" value="ID">
+                <label for="id">תעודת זהות</label>
+                <input type="radio" name="identifyType" id="passport" value="PASSPORT">
+                <label for="id">דרכון (עבור עובד זר)</label>
+            </div>
+            <div class="container">
+                <label>מספר תעודה מזהה: </label>
+                <input type="number" name="idNum" required>
+                <label for="img">צילום תעודה מזהה: </label>
+                <input type="file" id="img" name="idImg" accept="image/*">
+            </div>
+            <div class="container">
+                <label>תאריך לידה*: </label>
+                <input type="date" name="dateOfBirth" required>
+                <label>תאריך עלייה: </label>
+                <input type="date" name="dateOfAlia">
+            </div>
+            <div class="container">
+                <label>יישוב: 
+                    <select name="city">
+                        <option value="telavivyafo">תל אביב-יפו</option>
+                        <option value="haifa">חיפה</option>
+                        <option value="givataim">גבעתיים</option>
+                        <option value="ramla">רמלה</option>
+                        <option value="kfarsaba">אזור</option>
+                    </select>
+                </label>
+                <label>רחוב: 
+                    <select name="street">
+                        <option value="rabin">רבין</option>
+                        <option value="haalia">העלייה</option>
+                        <option value="hayordim">היורדים</option>
+                        <option value="yigalalon">יגאל אלון</option>
+                        <option value="habanim">הבנים</option>
+                    </select>
+                </label>
+                <label>מספר בית*: </label>
+                <input type="number" name="houseNum" required>
+                <label>מיקוד*: </label>
+                <input type="number" name="zipcode" required>
+            </div>
+            <div class="container">
+                <label>טלפון נייד*: </label>
+                <input type="tel" name="mobilePhoneNumber">
+                <label>טלפון בבית: </label>
+                <input type="tel" name="landlineNumber" required>
+            </div>
+            <div class="container">
+                <label>דוא"ל*: </label>
+                <input type="email" name="email" required>
+            </div>
+            <div class="container">
+                <div class="innerContainer">
+                    <h3>מין: </h3>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male">זכר</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female">נקבה</label>
+                </div>
+                <div class="innerContainer">
+                    <h3>מצב משפחתי: </h3>
+                    <input type="radio" name="martialStatus" id="single" value="single">
+                    <label for="single">רווק.ה</label>
+                    <input type="radio" name="martialStatus" id="married" value="married">
+                    <label for="married">נשוי.ה</label>
+                    <input type="radio" name="martialStatus" id="widow" value="widow">
+                    <label for="widow">אלמן.ה</label>
+                    <input type="radio" name="martialStatus" id="divorced" value="divorced">
+                    <label for="divorced">גרוש.ה</label>
+                    <input type="radio" name="martialStatus" id="separated" value="separated">
+                    <label for="separated">פרוד.ה</label>
+                </div>
+                <div class="innerContainer">
+                    <h3>תושב ישראל:  </h3>
+                    <input type="radio" name="isIsraeli" id="yes" value="yes">
+                    <label for="yes">כן</label>
+                    <input type="radio" name="isIsraeli" id="no" value="no">
+                    <label for="no">לא</label>
+                </div>
+                <div class="innerContainer">
+                    <h3>תושב קיבוץ:  </h3>
+                    <input type="radio" name="isKibutz" id="yes" value="yes">
+                    <label for="yes">כן</label>
+                    <input type="radio" name="isKibutz" id="no" value="no">
+                    <label for="no">לא</label>
+                </div>
+                <div class="innerContainer">
+                    <h3>קופת חולים: </h3>
+                    <input type="radio" name="hmo" id="macabi" value="macabi">
+                    <label for="macabi">מכבי</label>
+                    <input type="radio" name="hmo" id="clalit" value="clalit">
+                    <label for="clalit">כללית</label>
+                    <input type="radio" name="hmo" id="meuhedet" value="meuhedet">
+                    <label for="meuhedet">מאוחדת</label>
+                    <input type="radio" name="hmo" id="leumit" value="leumit">
+                    <label for="leumit">לאומית</label>
+                </div>
+            </div>
+            <p>
+                <input type="submit" value="שלח">
+                <input type="reset" value="אפס">
+            </p>
+        </form>
+    </body>
+</html>
