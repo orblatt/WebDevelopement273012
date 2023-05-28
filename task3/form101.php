@@ -1,7 +1,7 @@
 <?php
     $servername = "localhost";
     $username = "orbla_test_user";
-    $password = "REDACTED";
+    $password = "12345678";
     $dbname = "orbla_or_noy_lior_targil3_php";
 
 	// Create connection
