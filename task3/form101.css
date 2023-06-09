@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(148, 209, 226);
+}
+
+p {
+    background: #06789a;
+}
+
+h4 {
+    color: red;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    position: relative;
+    display: flex;
+    border: 1px solid black;
+    margin-top: 1%;
+}
+
+.container .innerContainer {
+    width: 20%;
+    margin: 1%;
+    border: 1px solid black;
+}
