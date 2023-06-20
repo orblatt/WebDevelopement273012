@@ -1,0 +1,18 @@
+*{
+    box-sizing:border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body{height:100%;}
+header{height:10%;}
+main{width:70%;margin:auto;overflow:auto;height:90%;}
+#logo{height:100%;float:left;margin-left:15%;width:10%;}
+.bord{border-style: solid;}
+section{height:100%; float: left;}
+#articles{width:25%; }
+#articleContent{width:50%;}
+#ads{width:25%;}
+.articleBox{height: 33.3%; width: 55%; }
+#contentText{height: 33.3%; width: 80%;}
+#adBox{height: 48%; width: 80%;}
