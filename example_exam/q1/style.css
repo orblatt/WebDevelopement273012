@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body { height: 100%; }
+.bord { border-style: solid; }
+
+header { height: 20%; }
+.whole { 
+    float:left;
+    height: 80%; 
+}
+aside { width: 35%; }
+main { width: 30% ;}
+
+#within {
+    margin: 20% auto;
+    height: 50%;
+    width: 80%;
+}
