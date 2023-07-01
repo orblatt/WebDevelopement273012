@@ -2,32 +2,47 @@
   <head>
     <title>Pet Store</title>
     <link rel="stylesheet" href="../css/all.css">
+    <style>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+        }
+        
+        li, img {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          padding: 8px;
+          background-color: #dddddd;
+        }
+        </style>
 </head>
 <body>
+<header>
+    <nav>
+        <div class="logo">
+            <img src="../resources/logo.jpg" alt="logo" height="75" width="75">
+        </div>
+        <ul>
+            <li><a href="PersonalDetails.html">Personal Details</a></li>
+            <li><a href="Orders.html">Orders</a></li>
+            <li><a href="MyOrder.html">My Orders</a></li>
+            <li><a href="Membership.html">Member Subscription</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
     <h1>חנות חיות</h1>
-    <img src="../resources/logo.jpg" alt="logo" height="230" width="300">
-    <h3>בן צבי 17 יהוד-מונסון</h3>
-    <h3>03-6742111</h3>
-
-<p>
-    <a href="./PersonalDetails.html"> 
-        <button>פרטים אישיים</button>
-    </a>
-</p>
-<p>
-    <a href="./Orders.html"> 
-            <button>הזמנות</button>
-    </a>
-</p>
-<p>
-    <a href="./MyOrder.html"> 
-            <button>ההזמנות שלי</button>
-    </a>
-</p>
-<p>
-    <a href="./Membership.html"> 
-            <button>חבר מועדון</button>
-    </a>
-</p>
+    <video width="356" height="640" autoplay muted loop preload="auto">
+        <source src="../resources/pexels-anthony-shkraba-7525614 (360p).mp4" type="video/mp4">
+    </video>
+</main>
+<footer>
+    <p>Contact Details: Haolim 12 Haifa | Phone: 052-123-4567</p>
+</footer>
 </body>
 </html>
