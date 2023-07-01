@@ -21,6 +21,17 @@
   </header>
   <main>
     <h1>פרטים אישיים</h1>
+    <div>
+      <img src="../resources/gan_profile_image.png" alt="profileImage">
+      <p>שם:</p>
+      <p id="customerName" onload="getCustomerName()"></p>
+    </div>
+    <div id="customerDetails"></div>
   </main>
+  <script>
+    function getCustomerName() {
+      document.getElementById('customerName').innerHTML = 'ישראל ישראלי'
+    }
+  </script>
   </body>
 </html>
